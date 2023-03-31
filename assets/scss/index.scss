@@ -1,0 +1,93 @@
+$pry-color: #7dd0e4;
+$pry-color-dark: darken(#7dd0e4, 30);
+
+@font-face {
+    font-family: "Gumela";
+    src: url(../fonts/Gumela\ Regular.otf);
+}
+
+@mixin flex($ai, $jc, $gap, $fld: false) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    gap: $gap;
+    @if ($fld != false) {
+        flex-direction: $fld;
+    }
+}
+
+.logo {
+    font-family: "Gumela";
+    color: $pry-color;
+    &:hover {
+        color: $pry-color;
+    }
+}
+
+.nav li a {
+    &:hover,
+    &.active {
+        color: $pry-color-dark !important;
+    }
+}
+
+.call-to-action {
+    background-color: $pry-color;
+    &:hover {
+        background-color: $pry-color-dark;
+    }
+}
+
+.icon {
+    background: $pry-color !important;
+    &:hover {
+        background: $pry-color-dark !important;
+    }
+}
+
+.mini-box i img {
+    width: 60px;
+    height: 60px;
+}
+
+.mini-box-container {
+    @include flex(center, center, 0);
+}
+
+.contact.social {
+    @include flex(center, center, 1rem);
+    a {
+        color: $pry-color-dark;
+        i {
+            padding: 10px;
+            background-color: white;
+            border-radius: 50%;
+            font-size: 20px;
+            transition: 200ms;
+            &:hover {
+                transform: scale(1.2);
+                background-color: $pry-color-dark;
+                color: white;
+            }
+        }
+    }
+}
+
+footer {
+    background: linear-gradient(to bottom left, $pry-color, $pry-color-dark);
+    .section-title {
+        color: white !important;
+    }
+    .section-title ~ p {
+        color: white;
+        line-height: 58px;
+    }
+
+    ul li a {
+        color: $pry-color-dark !important;
+        &:hover {
+            color: white !important;
+            background-color: $pry-color-dark !important;
+        }
+    }
+}

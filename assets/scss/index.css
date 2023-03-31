@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Gumela";
+  src: url(../fonts/Gumela\ Regular.otf);
+}
+.logo {
+  font-family: "Gumela";
+  color: #7dd0e4;
+}
+.logo:hover {
+  color: #7dd0e4;
+}
+
+.nav li a:hover, .nav li a.active {
+  color: #228ca6 !important;
+}
+
+.call-to-action {
+  background-color: #7dd0e4;
+}
+.call-to-action:hover {
+  background-color: #228ca6;
+}
+
+.icon {
+  background: #7dd0e4 !important;
+}
+.icon:hover {
+  background: #228ca6 !important;
+}
+
+.mini-box i img {
+  width: 60px;
+  height: 60px;
+}
+
+.mini-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.contact.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact.social a {
+  color: #228ca6;
+}
+.contact.social a i {
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 200ms;
+}
+.contact.social a i:hover {
+  transform: scale(1.2);
+  background-color: #228ca6;
+  color: white;
+}
+
+footer {
+  background: linear-gradient(to bottom left, #7dd0e4, #228ca6);
+}
+footer .section-title {
+  color: white !important;
+}
+footer .section-title ~ p {
+  color: white;
+  line-height: 58px;
+}
+footer ul li a {
+  color: #228ca6 !important;
+}
+footer ul li a:hover {
+  color: white !important;
+  background-color: #228ca6 !important;
+}/*# sourceMappingURL=index.css.map */
